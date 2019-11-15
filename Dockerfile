@@ -2,7 +2,7 @@
 FROM ruby:2.5.1-slim
 
 # install rails dependencies
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs libsqlite3-dev
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
 
 # create a folder /myapp in the docker container and go into that folder
 RUN mkdir /myapp
